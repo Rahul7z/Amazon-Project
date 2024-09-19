@@ -1,6 +1,10 @@
 # AWS Data Analytical Platform for the City of Vancouver
 ## Project Overview
 This project focuses on the design and implementation of an AWS Data Analytical Platform (DAP) for processing and analyzing business license data in the City of Vancouver. The project involves setting up scalable, secure, and efficient data pipelines using AWS services like S3, Glue, IAM, KMS, CloudWatch, and CloudTrail. By leveraging these services, the platform handles data ingestion, processing, governance, and real-time monitoring for effective insights.
+<img width="814" alt="Screenshot 2024-08-27 at 3 09 59 PM" src="https://github.com/user-attachments/assets/915238c2-669d-47e5-aab0-b288946eae84">
+
+<img width="1199" alt="Screenshot 2024-08-27 at 3 11 47 PM" src="https://github.com/user-attachments/assets/4516cffe-59b1-4069-b77a-2a1ba6eaf692">
+
 
 ## Objective
 The objective of this project is to design a robust data platform capable of efficiently processing, cleaning, and analyzing business license data for Vancouver, BC. This project seeks to explore trends, fees, and the issuance of licenses using AWS services to ensure secure, scalable, and cost-effective operations.
