@@ -1,49 +1,89 @@
-
 # AWS Data Analytical Platform for the City of Vancouver
+## Project Overview
+This project focuses on the design and implementation of an AWS Data Analytical Platform (DAP) for processing and analyzing business license data in the City of Vancouver. The project involves setting up scalable, secure, and efficient data pipelines using AWS services like S3, Glue, IAM, KMS, CloudWatch, and CloudTrail. By leveraging these services, the platform handles data ingestion, processing, governance, and real-time monitoring for effective insights.
 
-# Project Description
-This project focuses on designing and implementing a Data Analytical Platform (DAP) for the City of Vancouver using AWS services. The platform aims to streamline data ingestion, storage, and analysis, providing insights across various domains, including Business and Economy. By leveraging AWS S3, Glue, and Athena, the platform handles datasets from 2013 to 2024 business licenses to offer valuable descriptive analysis.
+## Objective
+The objective of this project is to design a robust data platform capable of efficiently processing, cleaning, and analyzing business license data for Vancouver, BC. This project seeks to explore trends, fees, and the issuance of licenses using AWS services to ensure secure, scalable, and cost-effective operations.
 
-# Objective
-The objective is to build a scalable and efficient data analytical platform using AWS that can handle large datasets, provide clean and restructured data, and generate insightful analyses. Specifically, the project aims to understand trends in business license issuance, analyze fees, and generate insights for policymakers and business operators in Vancouver.
+## Tools and Technologies
+AWS S3: For storing raw, processed, and analyzed data.
+AWS Glue: For creating ETL pipelines, data transformation, and governance.
+AWS Athena: For querying and analyzing data directly from S3.
+AWS IAM: For managing secure access to AWS resources.
+AWS KMS: For encrypting data at rest and in transit.
+AWS CloudWatch: For monitoring system performance and cost management.
+AWS CloudTrail: For logging and tracking API activities.
+EC2: For deploying data visualizations and reports.
+Project Structure
+Reports
+The project has two key reports, each outlining specific aspects of the AWS platform’s design, security, and analysis:
 
-# Dataset
-The primary dataset includes business license data from 2013 to 2024 for the province of British Columbia, particularly focusing on the years 2023 and 2024. The data was sourced from the City of Vancouver's open data portal and includes fields such as business type, license fees, issue date, and expiry date.
+## Part 1 Report: Data Analytical Platform Design
+Covers the overall architecture, data ingestion methods, and the steps taken to process and analyze business license data.
 
-Link to dataset: Business Licenses 2013-2024
+Part 2 Report: AWS Security, Governance, and Monitoring
+Highlights AWS’s security, data governance, and real-time monitoring services, focusing on how IAM, KMS, Glue, and CloudWatch are integrated for this project.
 
-# Methodology
-## Data Collection and Preparation:
+Datasets
+The following datasets, consisting of business licenses data from 2023 and 2024, were used to demonstrate data cleaning, ingestion, and analysis:
 
-Data was sourced from the City of Vancouver's open data portal.
-Files were cleaned using AWS Glue Databrew to remove missing values and reformat columns.
-Dataset restructuring involved the addition of derived columns and data-type changes.
-Data Storage Design:
+Business Licenses 2023
+Business Licenses 2024
+These datasets were ingested into AWS S3 and processed using AWS Glue for further analysis in Athena.
 
-Data was stored in an AWS S3 bucket with folders for "Landing" (raw data), "Raw" (processed data), and "Curated" (analyzed data).
-Folders were created for both the 2023 and 2024 datasets.
-## Data Pipeline Implementation:
+## Scripts
+Python scripts were used to clean and process the business license data. These scripts can be adapted for other datasets or ETL processes.
 
-## ETL (Extract, Transform, Load) processes were managed using AWS Glue.
-The pipeline involved schema changes, union operations for combining datasets, and aggregate functions to compute metrics like the average fee paid for licenses.
-Data Analysis and Visualization:
+## Data Processing Script
+Demonstrates how to clean and process business license data using Python and AWS Glue.
+Architecture
+The project’s architecture diagram illustrates how AWS services were integrated to handle the data pipeline from ingestion to analysis, including security and monitoring features.
 
-## Data was analyzed in AWS Athena, with a custom table created to store processed data.
-Data was visualized using tools like AWS Quicksight and Matplotlib for insights into business license trends.
-Data Publishing:
+## Architecture Diagram
+This diagram visualizes the flow of data through AWS services, showing key elements like IAM, S3, Glue, CloudWatch, and EC2.
 
-## The analyzed data was published on an EC2 instance configured as a web server, accessible via a public IP.
-Tools and Technologies
-Data Storage & Processing: AWS S3, AWS Glue
-Data Cleaning & Restructuring: AWS Glue Databrew
-Data Analysis: AWS Athena
-Visualization: AWS Quicksight, Python (Matplotlib)
-Publishing: EC2 (Web Server)
-# Deliverables
-A cleaned and restructured dataset for business licenses from 2023 and 2024.
-An ETL pipeline designed using AWS Glue to ingest and process data.
-Visualizations of business license trends in British Columbia.
-A final report summarizing key insights and analysis results.
-A published web server with access to analysis results.
+## Methodology
+1. Data Collection
+Source: Data was sourced from the City of Vancouver’s open data portal, focusing on business license data for the years 2023 and 2024.
+2. Data Ingestion
+The raw data was stored in AWS S3, with separate folders for 2023 and 2024 business licenses data.
+A detailed explanation of the data storage design includes:
+Landing Folder: Stores the raw operational data.
+Raw Folder: Stores cleaned and restructured data.
+Curated Folder: Stores analyzed data after ETL processing.
+3. Data Processing
+Data cleaning and restructuring were handled using AWS Glue. Glue’s Databrew was used to automate ETL (Extract, Transform, Load) processes.
+Data was then analyzed using AWS Athena, providing insights into business trends, average license fees, and more.
+4. Data Governance & Security
+IAM and KMS were employed to enforce access control and data encryption. Sensitive data was protected using KMS encryption both at rest and in transit.
+AWS Glue handled data governance, ensuring data quality and compliance with pre-defined policies.
+5. Data Monitoring
+AWS CloudWatch provided real-time monitoring of resource usage and costs.
+CloudTrail tracked API activities, logging data access and changes to ensure full transparency.
+## Key Features
+### Data Security: 
+AWS IAM and KMS were used to control access and ensure the security of sensitive data.
+### Data Governance: 
+AWS Glue automated data cleaning and monitoring, ensuring that only relevant, compliant data was processed.
+### Data Monitoring: 
+AWS CloudWatch and CloudTrail provided real-time monitoring and cost management, with alarms configured to track unexpected changes in usage.
 
 
+## View Results in AWS Athena:
+Use AWS Athena to query and analyze the cleaned data stored in your S3 bucket. You can create SQL queries to extract insights into business license trends and fees.
+
+## Deliverables
+Reports:
+Detailed descriptions of the project’s design, implementation, and AWS services used.
+
+## Sample Datasets:
+Cleaned and processed datasets from 2023 and 2024 for analysis in AWS Athena.
+
+Scripts:
+Python scripts for processing and cleaning business license data, ready to be integrated with AWS Glue pipelines.
+
+Architecture Diagram:
+A visual guide to the AWS services used in the project, highlighting how they interact and handle different parts of the data pipeline.
+
+## Conclusion
+The AWS Data Analytical Platform for the City of Vancouver offers a scalable, secure, and efficient solution for processing business license data. By integrating AWS services such as S3, Glue, IAM, and CloudWatch, the platform ensures high standards of operational excellence, security, and cost efficiency. The insights generated from this data can be used to inform policy decisions and improve the management of business licenses in Vancouver.
