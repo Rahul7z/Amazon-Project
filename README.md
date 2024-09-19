@@ -1,6 +1,5 @@
-# Amazon-Project
-# Project Title
-## AWS Data Analytical Platform for the City of Vancouver
+
+# AWS Data Analytical Platform for the City of Vancouver
 
 # Project Description
 This project focuses on designing and implementing a Data Analytical Platform (DAP) for the City of Vancouver using AWS services. The platform aims to streamline data ingestion, storage, and analysis, providing insights across various domains, including Business and Economy. By leveraging AWS S3, Glue, and Athena, the platform handles datasets from 2013 to 2024 business licenses to offer valuable descriptive analysis.
@@ -40,7 +39,7 @@ Data Cleaning & Restructuring: AWS Glue Databrew
 Data Analysis: AWS Athena
 Visualization: AWS Quicksight, Python (Matplotlib)
 Publishing: EC2 (Web Server)
-Deliverables
+# Deliverables
 A cleaned and restructured dataset for business licenses from 2023 and 2024.
 An ETL pipeline designed using AWS Glue to ingest and process data.
 Visualizations of business license trends in British Columbia.
