@@ -77,10 +77,14 @@ Upload of Operational data from the City of Vancouver portal in Excel format in 
 4. Data Processing
 Data cleaning and restructuring were handled using AWS Glue. Glue’s Databrew was used to automate ETL (Extract, Transform, Load) processes.
 Data was then analyzed using AWS Athena, providing insights into business trends, average license fees, and more.
-5. Data Governance & Security
+<img width="454" alt="image" src="https://github.com/user-attachments/assets/fac7ee76-e28b-4d86-a64e-792d5ad4c5f2">
+
+<img width="194" alt="image" src="https://github.com/user-attachments/assets/2f94533d-49b1-4e22-b394-09e67eb4f6dc">
+
+6. Data Governance & Security
 IAM and KMS were employed to enforce access control and data encryption. Sensitive data was protected using KMS encryption both at rest and in transit.
 AWS Glue handled data governance, ensuring data quality and compliance with pre-defined policies.
-6. Data Monitoring
+7. Data Monitoring
 AWS CloudWatch provides real-time monitoring of resource usage and costs.
 CloudTrail tracked API activities, logging data access and changes to ensure full transparency.
 ## Key Features
