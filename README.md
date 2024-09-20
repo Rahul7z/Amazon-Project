@@ -5,8 +5,11 @@ This project focuses on designing and implementing an AWS Data Analytical Platfo
 This project aims to design a robust data platform capable of efficiently processing, cleaning, and analyzing business license data for Vancouver, BC. This project seeks to explore trends, fees, and the issuance of licenses using AWS services to ensure secure, scalable, and cost-effective operations.
 Objectives
 Data Protection & Governance: Use AWS IAM, KMS, and Glue for access control, encryption, and data governance.
+
 Data Analysis: Conduct descriptive and diagnostic analysis of business licenses to uncover trends and insights.
+
 Data Monitoring: Implement cost and performance monitoring using AWS CloudWatch and CloudTrail.
+
 Performance and Cost Optimization: Achieve operational excellence, security, reliability, and sustainability using AWS services.
 
 ## Tools and Technologies
