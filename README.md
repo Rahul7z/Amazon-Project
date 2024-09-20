@@ -116,8 +116,13 @@ Use AWS Athena to query and analyze the cleaned data stored in your S3 bucket. Y
 <img width="452" alt="image" src="https://github.com/user-attachments/assets/1562b6a2-3b19-46bb-89df-657244cc1966">
 
 5. Data Analysis & Visualization: Query results from AWS Athena and visual reports.
+ 
+  <img width="454" alt="image" src="https://github.com/user-attachments/assets/23eb4b1e-8f54-497c-8bce-e3212bb35704">
+
 6. Monitoring & Cost Management: CloudWatch dashboard and cost alarms.
+
 7. Security: IAM roles and KMS encryption policies.
+
 
 ## Sample Datasets:
 Cleaned and processed datasets from 2023 and 2024 for analysis in AWS Athena.
