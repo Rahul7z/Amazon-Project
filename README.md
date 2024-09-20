@@ -105,14 +105,19 @@ AWS CloudWatch and CloudTrail provided real-time monitoring and cost management,
 Use AWS Athena to query and analyze the cleaned data stored in your S3 bucket. You can create SQL queries to extract insights into business license trends and fees.
 
 ## Deliverables
-Detailed descriptions of the project’s design, implementation, and AWS services used.
-Data Storage and Ingestion: S3 bucket structure and data ingestion pipeline.
-Data Cleaning & Preparation: AWS Glue scripts for cleaning and restructuring.
-ETL Pipeline: Complete AWS Glue ETL pipeline for business license data.
-<img width="452" alt="image" src="https://github.com/user-attachments/assets/1562b6a2-3b19-46bb-89df-657244cc1966">Data Analysis & Visualization: Query results from AWS Athena and visual reports.
+1. Detailed descriptions of the project’s design, implementation, and AWS services used.
+2. Data Storage and Ingestion: S3 bucket structure and data ingestion pipeline.
+3. Data Cleaning & Preparation: AWS Glue scripts for cleaning and restructuring.
 
-Monitoring & Cost Management: CloudWatch dashboard and cost alarms.
-Security: IAM roles and KMS encryption policies.
+<img width="452" alt="image" src="https://github.com/user-attachments/assets/6a6ca1ac-2730-4320-9c53-50f18b29c183">
+
+4. ETL Pipeline: Complete AWS Glue ETL pipeline for business license data.
+
+<img width="452" alt="image" src="https://github.com/user-attachments/assets/1562b6a2-3b19-46bb-89df-657244cc1966">
+
+5. Data Analysis & Visualization: Query results from AWS Athena and visual reports.
+6. Monitoring & Cost Management: CloudWatch dashboard and cost alarms.
+7. Security: IAM roles and KMS encryption policies.
 
 ## Sample Datasets:
 Cleaned and processed datasets from 2023 and 2024 for analysis in AWS Athena.
