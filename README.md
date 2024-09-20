@@ -2,7 +2,7 @@
 ## Project Overview
 This project focuses on designing and implementing an AWS Data Analytical Platform (DAP) for processing and analyzing business license data in the City of Vancouver. The project involves setting up scalable, secure, and efficient data pipelines using AWS services like S3, Glue, IAM, KMS, CloudWatch, and CloudTrail. By leveraging these services, the platform handles data ingestion, processing, governance, and real-time monitoring for effective insights.
 
-<img width="1199" alt="Screenshot 2024-08-27 at 3 11 47 PM" src="https://github.com/user-attachments/assets/4516cffe-59b1-4069-b77a-2a1ba6eaf692">
+
 
 
 ## Objective
@@ -50,14 +50,25 @@ This diagram visualizes the data flow through AWS services, showing key elements
 ## Methodology
 1. Data Collection
 Source: Data was sourced from the City of Vancouver’s open data portal, focusing on business license data for 2023 and 2024.
+
+<img width="1199" alt="Screenshot 2024-08-27 at 3 11 47 PM" src="https://github.com/user-attachments/assets/4516cffe-59b1-4069-b77a-2a1ba6eaf692">
+
+
 <img width="814" alt="Screenshot 2024-08-27 at 3 09 59 PM" src="https://github.com/user-attachments/assets/915238c2-669d-47e5-aab0-b288946eae84">
-<img width="452" alt="image" src="https://github.com/user-attachments/assets/ce9c489e-e10a-45cf-93d6-389a79d7493a">
+
+
 3. Data Ingestion
-The raw data was stored in AWS S3, with separate folders for 2023 and 2024 business licenses data.
-A detailed explanation of the data storage design includes:
+The raw data was stored in AWS S3, with separate folders for 2023 and 2024 business license data.
+
+<img width="452" alt="image" src="https://github.com/user-attachments/assets/ce9c489e-e10a-45cf-93d6-389a79d7493a">A detailed explanation of the data storage design includes:
+
 Landing Folder: Stores the raw operational data.
 Raw Folder: Stores cleaned and restructured data.
+<img width="452" alt="image" src="https://github.com/user-attachments/assets/180ba245-a7df-429a-8f44-94d0477bd4d7">
+
+<img width="452" alt="image" src="https://github.com/user-attachments/assets/825ff032-117d-4705-85ea-9fb11271652f">
 Curated Folder: Stores analyzed data after ETL processing.
+
 4. Data Processing
 Data cleaning and restructuring were handled using AWS Glue. Glue’s Databrew was used to automate ETL (Extract, Transform, Load) processes.
 Data was then analyzed using AWS Athena, providing insights into business trends, average license fees, and more.
