@@ -14,6 +14,10 @@ AWS S3: For storing raw, processed, and analyzed data.
 S3 service:
 Creation of an S3 bucket ‘project-bus-eco-rahul-dataset’ for the Business and Economy dataset of the City of Vancouver.
 <img width="452" alt="image" src="https://github.com/user-attachments/assets/ce9c489e-e10a-45cf-93d6-389a79d7493a">
+
+
+
+
 AWS Glue: This is used to create ETL pipelines, transform data, and govern governance.
 
 AWS Athena: This is used to query and analyze data directly from S3.
