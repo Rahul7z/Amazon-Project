@@ -1,15 +1,15 @@
 # AWS Data Analytical Platform for the City of Vancouver
 ## Project Overview
-This project focuses on designing and implementing an AWS Data Analytical Platform (DAP) for processing and analyzing business license data in the City of Vancouver. The project involves setting up scalable, secure, and efficient data pipelines using AWS services like S3, Glue, IAM, KMS, CloudWatch, and CloudTrail. By leveraging these services, the platform handles data ingestion, processing, governance, and real-time monitoring for effective insights.
-
-
-
-
+This project focuses on designing and implementing an AWS Data Analytical Platform (DAP) for processing and analyzing business license data in the City of Vancouver. The project involves setting up scalable, secure, and efficient data pipelines using AWS services like S3, Glue, IAM, KMS, CloudWatch, and CloudTrail. The platform uses these services to handle data ingestion, processing, governance, and real-time monitoring for compelling insights.
 ## Objective
 This project aims to design a robust data platform capable of efficiently processing, cleaning, and analyzing business license data for Vancouver, BC. This project seeks to explore trends, fees, and the issuance of licenses using AWS services to ensure secure, scalable, and cost-effective operations.
+Objectives
+Data Protection & Governance: Use AWS IAM, KMS, and Glue for access control, encryption, and data governance.
+Data Analysis: Conduct descriptive and diagnostic analysis of business licenses to uncover trends and insights.
+Data Monitoring: Implement cost and performance monitoring using AWS CloudWatch and CloudTrail.
+Performance and Cost Optimization: Achieve operational excellence, security, reliability, and sustainability using AWS services.
 
 ## Tools and Technologies
-
 AWS S3: For storing raw, processed, and analyzed data.
 AWS Glue: This is used to create ETL pipelines, transform data, and govern governance.
 AWS Athena: This is used to query and analyze data directly from S3.
@@ -18,7 +18,6 @@ AWS KMS: This is for encrypting data at rest and in transit.
 AWS CloudWatch: This is used to monitor system performance and cost management.
 AWS CloudTrail: This is for logging and tracking API activities.
 EC2: For deploying data visualizations and reports.
-
 # Project Structure
 Reports
 The project has two key reports, each outlining specific aspects of the AWS platform’s design, security, and analysis:
@@ -67,7 +66,10 @@ Raw Folder: Stores cleaned and restructured data.
 <img width="452" alt="image" src="https://github.com/user-attachments/assets/180ba245-a7df-429a-8f44-94d0477bd4d7">
 
 <img width="452" alt="image" src="https://github.com/user-attachments/assets/825ff032-117d-4705-85ea-9fb11271652f">
+
 Curated Folder: Stores analyzed data after ETL processing.
+Ingestion Process: 
+Upload of Operational data from the City of Vancouver portal in Excel format in Landing folders of 2023 and 2024, respectively:
 
 4. Data Processing
 Data cleaning and restructuring were handled using AWS Glue. Glue’s Databrew was used to automate ETL (Extract, Transform, Load) processes.
@@ -76,7 +78,7 @@ Data was then analyzed using AWS Athena, providing insights into business trends
 IAM and KMS were employed to enforce access control and data encryption. Sensitive data was protected using KMS encryption both at rest and in transit.
 AWS Glue handled data governance, ensuring data quality and compliance with pre-defined policies.
 6. Data Monitoring
-AWS CloudWatch provided real-time monitoring of resource usage and costs.
+AWS CloudWatch provides real-time monitoring of resource usage and costs.
 CloudTrail tracked API activities, logging data access and changes to ensure full transparency.
 ## Key Features
 ### Data Security: 
